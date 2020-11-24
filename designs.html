@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">	<!-- Sets the reference to the CSS file -->
+    <title>Designs</title> <!-- Sets the title to appear on the browser tab -->
+  </head>
+  
+	<body>
+	
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture"> <!-- https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png -->
+		<h1>Omar Raja</h1>
+		<h2>Computer Science</h2>
+		
+	</div>
+	
+	<!--Within this div is the whole header including the profile picture (Using div class to make it round) and the headers titles.-->
+	
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Profile</a></li>
+			<li><a href="specifications.html">PC Specifications</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="interests.html">Interests</a></li>
+			<li><a href="designs.html">Designs</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>	<!--This performs an action "dropDownMenu" (Javascript function name)
+				on the item. the &#9776 is the unicode character for the mobile navigation bar icon.-->
+		
+		</ul>
+	</div>
+	
+	<!--This div class is for creating the nav bar has two classes for the unorderered list and list which all have hyperlinks.  The id "myNav" was not used in the CSS but was used
+		as a call for the javascript function below (getElementbyID). -->
+	
+
+	
+	<div id="content"> <!-- The content box div id for all items and text to go within -->
+		<img class="icon" src="images/about_ico.png" alt="Icon" > <!--http://www.freeiconspng.com/img/29152 (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Designs</h1>	<!--Header title -->
+		<hr>  <!-- Creates an underline -->
+		
+		<div class="project_text">
+		As an interest in my spare time I tend to do different types of photo manipulation and any sorts of designs using photoshop. I have been using photoshop for a few years on and off,
+		but this page will show my more recent designs.
+		
+		</div>
+		
+
+	</div>
+	<!--Contains all the headers,text and images-->
+	
+	<div id="content">
+		<img class="icon" src="images/pictures_ico.png" alt="Icon"> <!--https://d30y9cdsu7xlg0.cloudfront.net/png/72583-200.png (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Recent Designs</h1>
+
+		<hr>
+		<div class="project_text">
+		<h1 class="content_header"> PC (Click images to view in full size </h1>
+		</div>
+		<a href=images/design_1.jpg><img class="pc_picture" src="images/design_1.jpg" alt="Picture of Design"></a>
+		<br>
+		<a href=images/design_2.jpg><img class="design_picture" src="images/design_2.jpg" alt="Picture of Design"></a>
+		<br>
+		<br>
+		<a href=images/design_3.jpg><img class="project_picture" src="images/design_3.jpg" alt="Picture of Design"></a>
+	</div>
+	
+	
+	<!--This content box is similar to the first but different pictures and will have different content.-->
+	
+	<div class="footer">
+		&copy; Omar Raja - Mobile Adaptation Website)
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a> <!-- https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png (Edited to match Scheme-->
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png (Edited to match Scheme-->
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/flickr-icon.png (Edited to match Scheme-->
+		</div>
+	</div> <!-- Footer information and copyright will also include the social media icons.-->
+	
+
+	<script>
+	function dropDownMenu() {
+		var x = document.getElementById("myNav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
+	
+	<!--Performs a function called dropDownMenu, that gets the element of the id "myNav", checks if the className is navbar, and performs the "responsive" css code on it, else
+		the navigation bar stays default.-->
+	
+	</body>
+</html>

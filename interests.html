@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">	<!-- Sets the reference to the CSS file -->
+    <title>Interests</title> <!-- Sets the title to appear on the browser tab -->
+  </head>
+  
+	<body>
+	
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture"> <!-- https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png -->
+		<h1>Omar Raja</h1>
+		<h2>Computer Science</h2>
+		
+	</div>
+	
+	<!--Within this div is the whole header including the profile picture (Using div class to make it round) and the headers titles.-->
+	
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Profile</a></li>
+			<li><a href="specifications.html">PC Specifications</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="interests.html">Interests</a></li>
+			<li><a href="designs.html">Designs</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>	<!--This performs an action "dropDownMenu" (Javascript function name)
+				on the item. the &#9776 is the unicode character for the mobile navigation bar icon.-->
+		
+		</ul>
+	</div>
+	
+	<!--This div class is for creating the nav bar has two classes for the unorderered list and list which all have hyperlinks.  The id "myNav" was not used in the CSS but was used
+		as a call for the javascript function below (getElementbyID). -->
+	
+
+	
+	<div id="content"> <!-- The content box div id for all items and text to go within -->
+		<img class="icon" src="images/about_ico.png" alt="Icon" > <!--http://www.freeiconspng.com/img/29152 (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Computer related Interests</h1>	<!--Header title -->
+		<hr>  <!-- Creates an underline -->
+		
+		<div class="project_text">
+		Since a young age I've always been interested in technology and how it is all involving so I am trying to involve myself in as much technological activites as possible, this includes learning
+		different coding languages such as Java,HTML, CSS, PHP, Python and will continue to learn more. 
+		<br>
+		<br>
+		Designs are a big part of my computing interests, by using photoshop to manipulate images in different ways to make them more unique as shown in the designs page.
+		<br>
+		<br>
+		With VFX my skills are not as high as It requires much more time but I have learnt the basics and will develop these skills as it generally interests me and would like to one day produce
+		a video of a high standard.
+		
+		
+		</div>
+		
+
+	</div>
+	<!--Contains all the headers,text and images-->
+	
+	<div id="content">
+		<img class="icon" src="images/hobbies_ico.png" alt="Icon"> <!--https://d30y9cdsu7xlg0.cloudfront.net/png/10148-200.png (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Other interests/hobbies</h1>
+
+		<hr>
+		<div class="project_text">
+		When I am not doing computer(science) related tasks I do take an interest in sport including football, tennis and cricket mainly. Out of these I prefer to play cricket (Must be in my genes :D)
+		<br><br>
+		I support Manchester United, I am a fan of Rafael Nadal and I support my national cricket team Pakistan.
+		<br>
+		<a href=images/mu.jpg><img class = "interests_mu" src="images/mu.jpg" alt="Manchester United Logo"></a> <!-- https://seeklogo.com/images/M/manchester-united-logo-F14DA1FCCD-seeklogo.com.png -->
+		<br>
+		<a href=images/rafa.jpg><img class="interests_picture" src="images/rafa.jpg" alt="Rafael Nadal"></a> <!-- http://e2.365dm.com/17/08/16-9/20/skysports-tennis-grand-slam-new-york-rafael-nadal-us-open_4086647.jpg?20170829204008 -->
+		<br>
+		<a href=images/pk.jpg><img class="interests_picture" src="images/pk.jpg"  alt="Pakistan Cricket Team"></a> <!-- https://i1.wp.com/pakobserver.net/wp-content/uploads/2017/06/pakistan-team.jpg?resize=696%2C392&ssl=1 -->
+		
+		</div>
+	</div>
+	
+	
+	<!--This content box is similar to the first but different pictures and will have different content.-->
+	
+	<div class="footer">
+		&copy; Omar Raja - Mobile Adaptation Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a> <!-- https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png (Edited to match Scheme-->
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png (Edited to match Scheme-->
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/flickr-icon.png (Edited to match Scheme-->
+		</div>
+	</div> <!-- Footer information and copyright will also include the social media icons.-->
+	
+
+	<script>
+	function dropDownMenu() {
+		var x = document.getElementById("myNav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
+	
+	<!--Performs a function called dropDownMenu, that gets the element of the id "myNav", checks if the className is navbar, and performs the "responsive" css code on it, else
+		the navigation bar stays default.-->
+	
+	</body>
+</html>

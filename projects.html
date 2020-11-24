@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">	<!-- Sets the reference to the CSS file -->
+    <title>Projects</title> <!-- Sets the title to appear on the browser tab -->
+  </head>
+  
+	<body>
+	
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture"> <!-- https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png -->
+		<h1>Omar Raja</h1>
+		<h2>Computer Science</h2>
+		
+	</div>
+	
+	<!--Within this div is the whole header including the profile picture (Using div class to make it round) and the headers titles.-->
+	
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Profile</a></li>
+			<li><a href="specifications.html">PC Specifications</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="interests.html">Interests</a></li>
+			<li><a href="designs.html">Designs</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>	<!--This performs an action "dropDownMenu" (Javascript function name)
+				on the item. the &#9776 is the unicode character for the mobile navigation bar icon.-->
+		
+		</ul>
+	</div>
+	
+	<!--This div class is for creating the nav bar has two classes for the unorderered list and list which all have hyperlinks.  The id "myNav" was not used in the CSS but was used
+		as a call for the javascript function below (getElementbyID). -->
+	
+
+	
+	<div id="content"> <!-- The content box div id for all items and text to go within -->
+		<img class="icon" src="images/completed_ico.png" alt="Icon" > <!--http://www.freeiconspng.com/img/29152 (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Completed Projects</h1>	<!--Header title -->
+		<hr>  <!-- Creates an underline -->
+		
+		<div class="project_text">
+		<h1 class="content_header"> Java - RGB Text Editor </h1>
+		This project was created to allow the user to change the colour of text using RGB input values. 
+		</div>
+		<a href=images/java_program.jpg><img class="project_picture" src="images/java_program.jpg" alt="Java program"></a>	<!--An image that has a reference to itself to open the fullsize image -->
+		
+		<div class="project_text">
+		<h1 class="content_header"> C++ - Searching for Words </h1>
+		This project allowed the user to search for a list of words from a text file. 
+		</div>
+		<a href=images/c_program.jpg><img class="project_picture" src="images/c_program.jpg" alt="C++ program"></a>
+
+	</div>
+	<!--Contains all the headers,text and images-->
+	
+	<div id="content">
+		<img class="icon" src="images/ongoing_ico.png" alt="Icon"> <!--https://d30y9cdsu7xlg0.cloudfront.net/png/72583-200.png (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Ongoing Projects</h1>
+		<h2 class="content_subheader">Java,C++,Web Development </h2>
+		<hr>
+		<div class="project_text">
+		<h1 class="content_header"> Java - 2D Game </h1>
+		The project I am working on is a 2D Game that is based of shapes, on the base of brickbreaker.
+		</div>
+		<a href=images/brickbreaker.jpg><img class="project_picture" src="images/brickbreaker.jpg" alt="Java program"></a> <!-- http://3.bp.blogspot.com/-2IEAkiKVsl4/UwcDWjaZfPI/AAAAAAAAAaw/_2kCnkNOsQQ/s1600/Brick+Breaker.png -->
+	</div>
+	
+	
+	<!--This content box is similar to the first but different pictures and will have different content.-->
+	
+	<div class="footer">
+		&copy; Omar Raja - Mobile Adaptation Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a> <!-- https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png (Edited to match Scheme-->
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png (Edited to match Scheme-->
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/flickr-icon.png (Edited to match Scheme-->
+		</div>
+	</div> <!-- Footer information and copyright will also include the social media icons.-->
+	
+
+	<script>
+	function dropDownMenu() {
+		var x = document.getElementById("myNav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
+	
+	<!--Performs a function called dropDownMenu, that gets the element of the id "myNav", checks if the className is navbar, and performs the "responsive" css code on it, else
+		the navigation bar stays default.-->
+	
+	</body>
+</html>

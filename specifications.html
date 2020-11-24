@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">	<!-- Sets the reference to the CSS file -->
+    <title>PC Specifications</title> <!-- Sets the title to appear on the browser tab -->
+  </head>
+  
+	<body>
+	
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture"> <!-- https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png -->
+		<h1>Omar Raja</h1>
+		<h2>Computer Science</h2>
+		
+	</div>
+	
+	<!--Within this div is the whole header including the profile picture (Using div class to make it round) and the headers titles.-->
+	
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Profile</a></li>
+			<li><a href="specifications.html">PC Specifications</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="interests.html">Interests</a></li>
+			<li><a href="designs.html">Designs</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>	<!--This performs an action "dropDownMenu" (Javascript function name)
+				on the item. the &#9776 is the unicode character for the mobile navigation bar icon.-->
+		
+		</ul>
+	</div>
+	
+	<!--This div class is for creating the nav bar has two classes for the unorderered list and list which all have hyperlinks.  The id "myNav" was not used in the CSS but was used
+		as a call for the javascript function below (getElementbyID). -->
+	
+
+	
+	<div id="content"> <!-- The content box div id for all items and text to go within -->
+		<img class="icon" src="images/specs_ico.png" alt="Icon" > <!--https://imageog.flaticon.com/icons/png/512/17/17214.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF (Edited to match colour scheme of site) -->
+		<h1 class="content_header">PC Specifications</h1>	<!--Header title -->
+		<hr>  <!-- Creates an underline -->
+		
+		<div class="project_text">
+		<b>CPU</b>: Intel Core i5-7500 CPU @3.4GHz
+		<br>
+		<br>
+		<b>CPU Cooler</b>: Cooler Master Hyper 212 EVO
+		<br>
+		<br>
+		<b>Memory</b>: Corsair Vengeance 16GB DDR4 2400MHz
+		<br>
+		<br>
+		<b>Hard-Drive</b>: WD 2TB 3.5"
+		<br>
+		<br>
+		<b>Solid State Drive</b>: 256GB Samsung EVO
+		<br>
+		<br>
+		<b>Graphics Card</b>: Gigabyte GTX 1060 6GB [GAMING]
+		<br>
+		<br>
+		<b>Motherboard</b>: ASUS ROG Strix B250F
+		<br>
+		<br>
+		<b>Power Supply</b>: EVGA SuperNOVA 650 G2 80+ GOLD
+		<br>
+		<br>
+		<b>Case</b>: NZXT S340 Elite (Black/Blue)
+		
+		</div>
+		
+
+	</div>
+	<!--Contains all the headers,text and images-->
+	
+	<div id="content">
+		<img class="icon" src="images/pictures_ico.png" alt="Icon"> <!--https://pixabay.com/p-1103595/?no_redirect (Edited to match colour scheme of site) -->
+		<h1 class="content_header">Images</h1>
+
+		<hr>
+		<div class="project_text">
+		<h1 class="content_header"> PC </h1>
+		</div>
+		<a href=images/pc_1.jpg><img class="pc_picture" src="images/pc_1.jpg" alt="Picture of PC"></a>
+		<br>
+		<a href=images/pc_2.jpg><img class="pc_picture" src="images/pc_2.jpg" alt="Picture of PC"></a>
+	</div>
+	
+	
+	<!--This content box is similar to the first but different pictures and will have different content.-->
+	
+	<div class="footer">
+		&copy; Omar Raja - Mobile Adaptation Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a> <!-- https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png (Edited to match Scheme-->
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png (Edited to match Scheme-->
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a> <!-- http://icons.iconarchive.com/icons/sicons/basic-round-social/512/flickr-icon.png (Edited to match Scheme-->
+		</div>
+	</div> <!-- Footer information and copyright will also include the social media icons.-->
+	
+
+	<script>
+	function dropDownMenu() {
+		var x = document.getElementById("myNav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
+	
+	<!--Performs a function called dropDownMenu, that gets the element of the id "myNav", checks if the className is navbar, and performs the "responsive" css code on it, else
+		the navigation bar stays default.-->
+	
+	</body>
+</html>

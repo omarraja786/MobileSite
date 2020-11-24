@@ -1,0 +1,446 @@
+/*Main body CSS */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #eee;
+	font-family: Tahoma, Helvetica, Arial, Geneva, sans-serif;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('Impact.eot');
+    src: url('Impact.eot?#iefix') format('embedded-opentype'),
+        url('Impact.woff') format('woff'),
+        url('Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Created a font face to allow IMPACT to be used on other devices. */
+
+/* The main body will have a main text colour of white, background colour of a very light grey and sets the main font family to be used.*/
+
+h1 {
+	
+	font-family: "IMPACT";
+	font-size: 51px;
+	color: #0c4d4e;
+	margin:0;
+    padding:0;
+}
+/* Sets the font family to impact, size to 51 and the text to a dark blue. The margin and padding are set to 0 to remove the outside border and creating spacing between the content*/
+
+h2 {
+	font-family: Tahoma;
+	color:#0c4d4e;
+	font-size: 30px;
+	font-weight: normal;
+	
+}
+
+/* Sets the font family to Tahoma, size to 30 and the text to a light blue. Made the font weight normal so it is not too bold.*/
+
+hr
+{
+	height: 0;
+	margin-top: 16px;
+	margin-bottom: 32px;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+/* CSS code for the underline to make it match the design requirement */
+
+/*Header CSS */
+
+
+
+.header
+{
+	color: #fff;
+	background: url(../images/header.jpg); /* http://www.open-spaces.co.uk/wp-content/uploads/2016/12/essex-university-landscape-01-1170x780.jpg - Added onto blue layer + transparency decreased*/
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	padding: 16px 20px;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/*Sets the background to the image, stop's the image from repeating. Sets the size to 100% 100% meaning it will fill the width and height. Padding is added to create spacing around the header. */
+
+@media only screen and (min-device-width: 1160px) {
+    .header { 
+		color: #fff;
+		background: url(../images/header.jpg); /* http://www.open-spaces.co.uk/wp-content/uploads/2016/12/essex-university-landscape-01-1170x780.jpg - Added onto blue layer + transparency decreased*/
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		padding: 16px 20px;
+		height: 286px;
+		text-align: center;
+		padding-bottom: 30px;	
+    }
+}
+
+/*This will apply for device widths less than 1160px. It will make it so the image doesnt repeat vertically, but will scale and lose proportianality. */
+
+
+.content_header {
+	color:#ffffff;
+	font-size: 32px;
+	font-family: Tahoma;
+	vertical-align: middle;
+	font-weight: normal;
+}
+/*Setting text for main headers of content boxes */
+
+
+.content_subheader {
+	padding-left: 47px;
+	margin-top	: 8px;
+	color:#c1fff8;
+	font-size: 24px;
+	font-family: Tahoma;
+}
+
+/* Text CSS for the sub-headers i.e. Staff Role */
+
+
+
+.profile-circle {
+	width: 120px;
+    height: 120px;
+    border-radius: 50%;
+	border: 4px solid #00404b;
+}
+
+/*Code to make any image into a circle, which is used for the profile pciture by setting the border radius to 50%.  */
+
+
+
+a { 
+text-decoration: none 
+} /* Remove the image underline */
+
+
+/*Nav bar CSS */
+
+/*The navigation bar has a set colour, the overflow is set to hidden so that no objects overlay eachother. The text is set to centre, float is set to left to make the text next to eachother.
+The hover makes it so that a lighter shade of grey appears to symbol that it is an active link that can be interacted with.
+The logo is added to the navigation bar, and is set to absolute so it is relative to its first parent element (the div). Set left to 0% so it stays to the left of the navigation bar. 
+Text decoration is set to none and the list style is set to none to remove all of the bullet points and underlines.*/
+
+
+.navbar {
+    background-color: #1e1f1a;
+    overflow: hidden;
+	text-align:center; 
+	
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+	text-align:center; 
+}
+
+
+.navbar a:hover {
+    background-color: #414141;
+}
+
+.navbar .navicon {
+	display: none;
+}
+
+/*This navicon is used for the mobile but is set to display:none so that it is not visible until the media code below is in use. */
+
+li {
+    float: left;
+}
+
+
+ul {
+ 	display:inline-block;
+    list-style-type: none;
+    margin: -3px;
+    padding: 0;
+    overflow: hidden;
+
+}
+	
+	
+
+@media screen and (max-width: 523px) {
+	
+li {
+    float: none;
+}
+	.navbar a {display: none;}
+	.navbar a.navicon {
+	float: right;
+	display: block;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .navicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+ 
+/*The navigation bar will change once the width of the page goes below 523px. It will remove the float so that the navigation bar displays vertically. Sets the icon to be displayed (3 horizontal lines)
+  and positions it at the top right so it does not overlap any of the navigation bar text.*/
+
+  
+  
+/*Content Box CSS */
+
+.icon {
+	display: inline-block;
+	margin-right: 12px;
+	float:left
+	
+}
+/*Code for the content box icons to position it next to the header. */
+
+
+#content {
+
+  overflow: hidden;
+  width: 700px ;
+  background-color: #1e1f1a;
+  color: white;
+  padding: 25px;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: 55px;
+  border: 3px solid #c1fff8 ;
+}
+
+/*Creates css to float the icon to the left, and create a content box to be used that has a border of 3px, a width of 700px, text of white and padding and margins are also added
+so that the text isnt too close to the edges and no content is too close to eachother. */
+
+@media screen and (max-width: 758px) {
+#content {
+  overflow: hidden;
+  width: auto ;
+  background-color: #1e1f1a;
+  color: white;
+  padding: 25px;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: 55px;
+  border: 3px solid #c1fff8 ;
+}
+
+/*For mobile devices the content box will be similar but not of a fixed width. It will resize automatically depending on the width of the browser; this will prevent horizontal scrolling. */
+
+h2 {
+	font-family: Tahoma;
+	color:#0c4d4e;
+	font-size: 30px;
+	font-weight: normal;
+	margin-left: 12px;
+	
+}
+}
+
+
+/*Within content box */
+
+/*This code is for the personal info boxes i.e. the name,email. There are two copies however one is for the boxes on the right and one is for the left boxes. I assigned the width and heights,
+the float is set to left to display the boxes next to eachother, and a margin was used to have spacing between the boxes. The display of flex is used so that all the flexible items are the same length, regardless of its content. */
+
+#parent {
+  display: flex;
+  float:left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 18px;
+
+}
+#whitebox_info {
+	font-family: Tahoma;
+	font-size: 16px;
+	width: 200px;
+	background: #fff;
+	color: #0c4d4e;
+	height: 25px;
+	border: 2px solid #c1fff8 ;
+}
+#bluebox_info {
+	background: #c1fff8;
+	color: #0c4d4e;
+  	font-family: Tahoma;
+	font-size: 16px;
+	font-weight: bold;
+	width: 98px;
+	height: 25px;
+	border: 2px solid #c1fff8 ;
+}
+
+
+#parent_right {
+	float:left;
+	display: flex;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-left: 18px;
+	
+}
+#whitebox_info_right {
+	font-family: Tahoma;
+	font-size: 16px;
+	width: 200px;
+	background: #fff;
+	color: #0c4d4e;
+	height: 25px;
+	border: 2px solid #c1fff8 ;
+	
+}
+#bluebox_info_right {
+	background: #c1fff8;
+	color: #0c4d4e;
+  	font-family: Tahoma;
+	font-size: 16px;
+	font-weight: bold;
+	width: 98px;
+	height: 25px;
+	border: 2px solid #c1fff8 ;
+}
+
+/*Mobile profile information */
+
+/*Once the width goes below 503px, instead of the fields being next to each other, it will change the display to block so the fields are directly underneath eachother. */
+@media screen and (max-width: 503px) {
+	
+#parent {
+  display: block;
+  float:left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 10px
+
+}
+
+#parent_right {
+	float:left;
+	display: block;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+}
+
+/*Project Content */
+
+/*CSS code for the all images and text. Sets the width and height of the images and a spacing between the images using padding at the bottom. */
+.project_picture {
+	width: 280px;
+	height:280px;
+	padding-bottom: 40px;
+	
+}
+
+.project_text {
+
+	padding-bottom: 15px;
+
+}
+
+/* PC Picture */
+
+.pc_picture {
+	width: 280px;
+	height:350px;
+	padding-bottom: 40px;
+	
+}
+
+.index_picture {
+	width: 290px;
+	height:160px;
+	padding-bottom: 40px;
+	
+}
+
+.design_picture {
+	width: 300px;
+	height:150px;
+	padding-bottom: 40px;
+	
+}
+
+.interests_picture {
+	width: 300px;
+	height:150px;
+	padding-bottom: 40px;
+	
+}
+
+.interests_mu {
+	width: 200px;
+	height:200px;
+	padding-bottom: 40px;
+	
+}
+	
+
+/* Footer CSS */
+
+#social {
+
+	height: 40px;
+	width: 40px;
+	margin-top: -60px;
+	padding-right: 10px;
+	margin-bottom: -10px;
+	
+}
+
+.footer_icons {
+
+  position: relative;
+  margin-top: 30px;
+
+ 
+}
+
+/*Positions the social icons in the footer, creates spacing between each icon and sets the size of the icons. */
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  margin-top: 80px;
+  background-color: #1e1f1a;
+  color: #c1fff8;
+  text-align: center;
+ 
+}
+/*Footer code is set with a background colour of dark grey, text colour of light blue, centered the text and creating a margin from the top to increase the spacing between content box and footer, 
+and a padding to increase the spacing between the text which allows a modification of height. The element is positioned relative to its normal position, in my case 0,0,0,0 */
+
+
